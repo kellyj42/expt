@@ -7,29 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        .faq-item {
-            transition: all 0.3s ease;
-        }
-        .faq-item:hover {
-            transform: translateY(-2px);
-        }
-        .demo
-        {
-            height: 400px;
-        }
-        .trans
-        {
-            transform: rotate(90deg);
-            transition: 0.5s;
-        }
-    </style>
-</head>
-<body class="overflow-x-hidden">
-    <div id="navbar-container"></div>
-    <style>
+        
         body {
             font-family: 'Inter', sans-serif;
         }
@@ -42,9 +20,11 @@
         .demo {
             height: 400px;
         }
+        .hidden,span {
+            transition: transform 0.5s ease;
+        }
         .trans {
-            transform: rotate(90deg);
-            transition: 0.5s;
+            transform: rotate(180deg);
         }
     </style>
 </head>
@@ -80,10 +60,6 @@
             </p>
         </div>
 
-  
-
-
-
         <div class="faq-item bg-white rounded-lg shadow-md p-6">
             <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(2)">
                 <h3 class="text-lg font-semibold text-gray-400">How do I upload resources?</h3>
@@ -94,7 +70,6 @@
             </p>
         </div>
 
-        
         <div class="faq-item bg-white rounded-lg shadow-md p-6">
             <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(3)">
                 <h3 class="text-lg font-semibold text-gray-400">How do I search for resources?</h3>
@@ -105,7 +80,6 @@
             </p>
         </div>
 
-    
         <div class="faq-item bg-white rounded-lg shadow-md p-6">
             <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(4)">
                 <h3 class="text-lg font-semibold text-gray-400">How do I participate in the discussion forum?</h3>
@@ -116,9 +90,6 @@
             </p>
         </div>
 
-        
-        
-       
         <div class="faq-item bg-white rounded-lg shadow-md p-6">
             <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ(6)">
                 <h3 class="text-lg font-semibold text-gray-400">How do I contact support?</h3>
@@ -129,12 +100,9 @@
             </p>
         </div>
     </div>
-
-    
-        
+<br><br>
     <div id="footer-container"></div>
-    <script src="Header.js">
-        
-    </script>
+    
+    <script src="Header.js"></script>
 </body>
 </html>

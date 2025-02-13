@@ -26,11 +26,16 @@ function toggleFAQ(id) {
     const ico = document.getElementById('demo2')
     if (answer.classList.contains('hidden')) {
         answer.classList.remove('hidden');
-        icons . classList.add('trans')
-        icon.textContent = document.getElementById('demo2').innerText;
+        icon.classList.add('trans');
+        
+        
 
     } else {
         answer.classList.add('hidden');
-        icon.textContent =  document.getElementById('demo1').innerText;
+        icon.classList.remove('trans');
+       
     }
+    setTimeout
+      
 }
+
