@@ -5,8 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body
+        {
+            overflow-x: hidden;
+        }
+        .content-drop
+        {
+            z-index: 1000;
+        }
+        .content
+        {
+            display: none;
+        }
+        .content-drop:hover .content
+        {
+            display: block;
+           
+        }
+    </style>
 </head>
-<body>
+
+<body class="overflow-x-hidden">
     <nav class="flex justify-between items-center px-20 shadow-sm py-5">
         <div class=" ">
             <img src="img/tree.png" alt="The logo"  width="40px">
@@ -25,7 +45,37 @@
                 <li class="text-slate-500"><a href="index.html">Home</a></li>
                 <li class="text-slate-500"><a href="about.html">About us</a></li>
                 <li class="text-slate-500"><a href="Faq.html">Faq</a></li>
-                <li class="text-slate-500 "><a href="dashbord.html" class="flex items-center ">Dashbord <img src="img/down.png" alt="" width="20px"></a></li>
+
+               <div class="content-drop"> 
+                <li class="text-slate-500 dash"><a href="dashbord.html" class="flex items-center ">Dashboard <img src="img/down.png" alt="" width="20px"></a></li>
+                <div class="content absolute  top-36 -mt-12 right-44 w-1/2 bg-slate-50 opacity-85 text-center p-2 w-80">
+                    <div>
+                        <h3 class="text-2xl">Mega menu</h3>
+                    </div>
+                    <div class="flex justify-center space-x-20 p-5 capitalize">
+                            <div class="">
+                            <h3 class="text-xl">Cat 1</h3>
+                            <ul class="space-y-2 text-lg">
+                                <li class=""><a href=""></a>link 1</li>
+                                <li><a href=""></a>link 2</li>
+                                <li><a href=""></a>link 3</li>
+                                <li><a href=""></a>link 4</li>
+                                <li><a href=""></a>link 5</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3  class="text-xl">Cat 1</h3>
+                            <ul class="space-y-2 text-lg">
+                                <li><a href=""></a>link 1</li>
+                                <li><a href=""></a>link 2</li>
+                                <li><a href=""></a>link 3</li>
+                                <li><a href=""></a>link 4</li>
+                                <li><a href=""></a>link 5</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
                 <li class="border px-5 py-2 text-white rounded bg-indigo-500"><a href="signin.html">Sign In</a></li>
             </div>
         </ul>
